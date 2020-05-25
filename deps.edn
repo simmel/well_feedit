@@ -12,5 +12,11 @@
                                  "-m" "se.soy.well_feedit.core"
                                  ]
                      }
+           :dev {
+                 :extra-paths [
+                               "dev"
+                               "classes"
+                               ]
+                 }
            }
 }
