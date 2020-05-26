@@ -39,4 +39,3 @@
 
 (defn get-original-url [entry] (first (get-content-urls entry)))
 (defn get-comment-url [entry] (last (get-content-urls entry)))
-(defn get-comment-rss-url [entry] (str (get-comment-url entry) ".rss"))
