@@ -22,6 +22,15 @@
 
 (def f (consume-http {:from "https://soy.se/netsec.atom"}))
 
+(defn update-link [entry]
+  (update
+    entry
+    :link
+    get-original-url
+    entry
+    )
+  )
+
 ; FIXME Merge these into one function with different argument arities?
 (defn update-comment-link [entry]
   (update
@@ -56,5 +65,5 @@
        )
   )
 
-(defn get-original-url [entry] (first (get-content-urls entry)))
+(defn get-original-url [_ entry] (first (get-content-urls entry)))
 (defn get-comment-url [entry] (last (get-content-urls entry)))
