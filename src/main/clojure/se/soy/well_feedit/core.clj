@@ -50,6 +50,10 @@
        link)
   )
 
+(defn remove-content [entry]
+  (dissoc entry :contents)
+  )
+
 (defn get-content-urls [entry]
   (map (fn [a] (second a))
        (rest
