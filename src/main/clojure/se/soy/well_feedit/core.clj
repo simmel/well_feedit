@@ -71,3 +71,18 @@
 (defn remove-content [entry]
   (dissoc entry :contents)
   )
+
+(defn fix-reddit-entry [entry]
+  (->
+    entry
+    update-comment-link
+    update-link
+    ;; Has to be last since update-comment-link and update-link depends on
+    ;; content
+    remove-content
+    )
+  )
+
+(defn fix-reddit-feed [feed]
+  (produce (shrink (update feed :entries #(map fix-reddit-entry %))))
+  )
