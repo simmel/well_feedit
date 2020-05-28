@@ -11,6 +11,8 @@
                                 sort-entries-by
                                 ]
              ]
+            [org.httpkit.server]
+            [org.httpkit.client]
             )
   )
 
@@ -38,7 +40,11 @@
                   )
   )
 
-(def f (consume-http {:from "https://soy.se/netsec.atom"}))
+(def http-kit-options {
+              :timeout 1000             ; ms
+              :user-agent user-agent
+              }
+  )
 
 (defn get-content-urls [entry]
   (map (fn [a] (second a))
@@ -103,4 +109,35 @@
 
 (defn fix-reddit-feed [feed]
   (produce (shrink (update feed :entries #(map fix-reddit-entry %))))
+  )
+
+(defn get-reddit-feed [url]
+  (let [
+        {:keys [
+                body
+                error
+                headers
+                status
+                ]
+         :as resp
+         } @(
+             org.httpkit.client/get
+             url
+             http-kit-options
+             )
+        ]
+    (if error
+      (println (format "%s Failed, exception: %s" url error))
+      body
+      )
+    )
+  )
+
+(defn get-well-feedit [url]
+  (->
+    url
+    get-reddit-feed
+    consume
+    fix-reddit-feed
+    )
   )
