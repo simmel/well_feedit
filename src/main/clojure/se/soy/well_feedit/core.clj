@@ -16,11 +16,6 @@
             )
   )
 
-;; (defn -main [& args]
-;;   (do (println "lol")
-;;       )
-;;   )
-;;
 (def version {
               :name "well_feedit"
               :version "1.0.0"
@@ -141,3 +136,22 @@
     fix-reddit-feed
     )
   )
+
+(defn -main [& args]
+  (defn app [req]
+    (let [
+          request (format "%s?%s"
+                          (subs (req :uri) 1)
+                          (req :query-string)
+                          )
+          reply (get-well-feedit request)
+          ]
+      {
+       :status  200
+       :headers {"Content-Type" "application/atom+xml; charset=UTF-8"}
+       :body    reply
+       }
+      )
+    )
+  (org.httpkit.server/run-server app {:port 8080})
+          )
