@@ -19,6 +19,24 @@
 ;;       )
 ;;   )
 ;;
+(def version {
+              :name "well_feedit"
+              :version "1.0.0"
+              :url "https://github.com/simmel/well_feedit/"
+              }
+  )
+
+(def user-agent (let
+                  [rome (.getPackage com.rometools.rome.io.XmlReader)]
+                  (format "%s/%s (+%s) %s/%s"
+                          (version :name)
+                          (version :version)
+                          (version :url)
+                          (.getImplementationTitle rome)
+                          (.getImplementationVersion rome)
+                          )
+                  )
+  )
 
 (def f (consume-http {:from "https://soy.se/netsec.atom"}))
 
