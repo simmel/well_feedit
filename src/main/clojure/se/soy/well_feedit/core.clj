@@ -151,11 +151,24 @@
                     )
           reply (get-well-feedit request)
           ]
-      {
-       :status  200
-       :headers {"Content-Type" "application/atom+xml; charset=UTF-8"}
-       :body    reply
-       }
+      (cond
+        (and
+          (instance? clojure.lang.PersistentArrayMap reply)
+          (contains? reply :error)
+          )
+        {
+         :status  500
+         :headers {"Content-Type" "text/plain; charset=UTF-8"}
+         :body    "Internal Server Error\n"
+         }
+
+        :else
+        {
+         :status  200
+         :headers {"Content-Type" "application/atom+xml; charset=UTF-8"}
+         :body    reply
+         }
+        )
       )
     )
   (org.httpkit.server/run-server app {:port 8080})
