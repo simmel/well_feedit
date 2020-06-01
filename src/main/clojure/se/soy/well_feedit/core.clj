@@ -152,6 +152,12 @@
           reply (get-well-feedit request)
           ]
       (cond
+        (= (req :uri) "/")
+        {
+         :status  200
+         :headers {"Content-Type" "text/plain; charset=UTF-8"}
+         :body    "lol meow dis is how we do it\n"
+         }
         (and
           (instance? clojure.lang.PersistentArrayMap reply)
           (contains? reply :error)
