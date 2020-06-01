@@ -140,10 +140,15 @@
 (defn -main [& args]
   (defn app [req]
     (let [
-          request (format "%s?%s"
-                          (subs (req :uri) 1)
-                          (req :query-string)
-                          )
+          request (str
+                    (subs (req :uri) 1)
+                    (let [qs (req :query-string)]
+                      (if (nil? qs)
+                        ""
+                        (str "?" qs)
+                        )
+                      )
+                    )
           reply (get-well-feedit request)
           ]
       {
