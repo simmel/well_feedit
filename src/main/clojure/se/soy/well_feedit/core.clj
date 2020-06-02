@@ -150,7 +150,10 @@
                         )
                       )
                     )
-          reply (get-well-feedit request)
+          reply (if (= request "")
+                  nil
+                  (get-well-feedit request)
+                  )
           ]
       ;; 1.2.3.4 well_feed.it - [27/May/2020:13:33:37 +0000] "GET /netsec.atom HTTP/1.1" 200 2642 "-" "well_feedit/1.0.0 (+https://github.com/simmel/well_feedit/) rome/1.12.0"
       (log/infof "%s %s %s %s %s" (req :remote-addr) (req :server-name) (req :request-method) (req :uri) (get-in req [:headers "user-agent"]))
