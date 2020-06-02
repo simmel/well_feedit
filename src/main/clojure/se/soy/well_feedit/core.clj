@@ -13,6 +13,7 @@
              ]
             [org.httpkit.server]
             [org.httpkit.client]
+            [clojure.tools.logging :as log]
             )
   )
 
@@ -122,7 +123,7 @@
              )
         ]
     (if error
-      (println (format "%s Failed, exception: %s" url error))
+      (log/errorf error "%s Failed" url)
       body
       )
     )
@@ -178,4 +179,5 @@
       )
     )
   (org.httpkit.server/run-server app {:port 8080})
+  (log/info "Server is up!")
           )
