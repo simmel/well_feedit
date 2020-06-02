@@ -28,7 +28,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Build container
-      run: docker build --tag well_feedit:$GITHUB_SHA .
+      run: docker build --tag well_feedit:$GITHUB_SHA --target=prod .
     - name: Log into registry
       run: echo "${{ secrets.DOCKER_TOKEN }}" | docker login -u darksoy --password-stdin
     - name: Push image
