@@ -20,6 +20,7 @@ well\_feedit currently:
 
 ### TODO
 
+* [ ] Add usage
 * [ ] Convert to using `lein`. `deps.edn` was fun to try but it's just not
   ready.
 * [ ] Start using jib for building the container
