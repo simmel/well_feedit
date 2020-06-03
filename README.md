@@ -6,7 +6,7 @@ make it more readable (primarily on [Miniflux](https://miniflux.app/), but
 works for anything else as well) and actually uses the Atom standard to it's
 fullest.
 
-## What it does
+### What it does
 
 well\_feedit currently:
 * On each entry:
@@ -20,7 +20,7 @@ well\_feedit currently:
 
 ### TODO
 
-[ ] Convert to using lein. deps.edn was fun to try but it's just not ready.
-[ ] Start using jib for building the container
-[ ] Add structured logging
-[ ] Move back to compojure, again. [It can be used.](https://github.com/weavejester/compojure/wiki/Routes-In-Detail#matching-the-uri)
+* [ ] Convert to using lein. deps.edn was fun to try but it's just not ready.
+* [ ] Start using jib for building the container
+* [ ] Add structured logging
+* [ ] Move back to compojure, again. [It can be used.](https://github.com/weavejester/compojure/wiki/Routes-In-Detail#matching-the-uri)
