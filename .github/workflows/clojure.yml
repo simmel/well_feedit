@@ -41,6 +41,7 @@ jobs:
         VERSION=${GITHUB_REF##*/}
         # Use Docker `latest` tag convention
         [ "$VERSION" == "master" ] && VERSION=latest
+        env
         echo IMAGE_ID=$IMAGE_ID
         echo VERSION=$VERSION
         echo IMAGE_ID=$IMAGE_ID
