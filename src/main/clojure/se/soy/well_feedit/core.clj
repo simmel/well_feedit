@@ -142,7 +142,8 @@
   (defn app [req]
     (let [
           request (str
-                    (subs (req :uri) 1)
+                    "https://old.reddit.com"
+                    (req :uri)
                     (let [qs (req :query-string)]
                       (if (nil? qs)
                         ""
