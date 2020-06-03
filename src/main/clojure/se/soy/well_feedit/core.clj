@@ -19,7 +19,7 @@
 
 (def version {
               :name "well_feedit"
-              :version "1.0.1"
+              :version "2.0.0"
               :url "https://github.com/simmel/well_feedit/"
               }
   )
