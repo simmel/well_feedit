@@ -15,6 +15,8 @@ well\_feedit currently:
     content if it can and want.
   * Adds a `link` element with `rel` `replies` which goes to the reddit
     comments.
+  * Then remove the `content` entry since it's just data duped from other
+    elements.
 * uses the `old.reddit.com` domain which still is better than the regular
   site.
 
