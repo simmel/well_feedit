@@ -9,13 +9,13 @@ fullest.
 ### What it does
 
 well\_feedit currently:
-* On each entry:
+* on each entry:
   * Extracts the real URL from the `content` element on each entry and updates
     the `link` element to that so that your feed reader can fetch the original
     content if it can and want.
   * Adds a `link` element with `rel` `replies` which goes to the reddit
     comments.
-* It uses the `old.reddit.com` domain which still is better than the regular
+* uses the `old.reddit.com` domain which still is better than the regular
   site.
 
 ### TODO
