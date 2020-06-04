@@ -26,3 +26,5 @@ well\_feedit currently:
 * [ ] Start using jib for building the container
 * [ ] Add structured logging
 * [ ] Move back to compojure, again. [It can be used.](https://github.com/weavejester/compojure/wiki/Routes-In-Detail#matching-the-uri)
+* [ ] Not to be that person, but add tests (even though I failed to use TDD yet
+  again)
