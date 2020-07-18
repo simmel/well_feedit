@@ -16,6 +16,10 @@
             [clojure.tools.logging :as log]
             [clojure.java.io :as io]
             )
+  (:use
+    [compojure.route :only [files not-found]]
+    [compojure.core :only [defroutes GET]]
+    )
   )
 
 (def version (let
@@ -156,51 +160,57 @@
   )
 
 (defn -main [& args]
-  (defn app [req]
-    (let [
-          request (str
-                    "https://old.reddit.com"
-                    (req :uri)
-                    (let [qs (req :query-string)]
-                      (if (nil? qs)
-                        ""
-                        (str "?" qs)
+  (defroutes app
+             (GET "/" [:as req]
+                  ;; 1.2.3.4 well_feed.it - [27/May/2020:13:33:37 +0000] "GET /netsec.atom HTTP/1.1" 200 2642 "-" "well_feedit/1.0.0 (+https://github.com/simmel/well_feedit/) rome/1.12.0"
+                  (log/infof "%s %s %s %s %s" (req :remote-addr) (req :server-name) (req :request-method) (req :uri) (get-in req [:headers "user-agent"]))
+                  {
+                   :status  200
+                   :headers {"Content-Type" "text/plain; charset=UTF-8"}
+                   :body    "lol meow dis is how we do it\n"
+                   }
+                  )
+             (GET "/:uri{.+}" [uri :as req]
+                  ;; 1.2.3.4 well_feed.it - [27/May/2020:13:33:37 +0000] "GET /netsec.atom HTTP/1.1" 200 2642 "-" "well_feedit/1.0.0 (+https://github.com/simmel/well_feedit/) rome/1.12.0"
+                  (log/infof "%s %s %s %s %s" (req :remote-addr) (req :server-name) (req :request-method) (req :uri) (get-in req [:headers "user-agent"]))
+                  (let [
+                        request (str
+                                  "https://old.reddit.com/"
+                                  uri
+                                  (let [qs (req :query-string)]
+                                    (if (nil? qs)
+                                      ""
+                                      (str "?" qs)
+                                      )
+                                    )
+                                  )
+                        reply (if (= request "")
+                                nil
+                                (get-well-feedit request)
+                                )
+                        ]
+                    (cond
+                      (and
+                        (instance? clojure.lang.PersistentArrayMap reply)
+                        (contains? reply :error)
                         )
+                      {
+                       :status  500
+                       :headers {"Content-Type" "text/plain; charset=UTF-8"}
+                       :body    "Internal Server Error\n"
+                       }
+
+                      :else
+                      {
+                       :status  200
+                       :headers {"Content-Type" "application/atom+xml; charset=UTF-8"}
+                       :body    reply
+                       }
                       )
                     )
-          reply (if (= request "")
-                  nil
-                  (get-well-feedit request)
                   )
-          ]
-      ;; 1.2.3.4 well_feed.it - [27/May/2020:13:33:37 +0000] "GET /netsec.atom HTTP/1.1" 200 2642 "-" "well_feedit/1.0.0 (+https://github.com/simmel/well_feedit/) rome/1.12.0"
-      (log/infof "%s %s %s %s %s" (req :remote-addr) (req :server-name) (req :request-method) (req :uri) (get-in req [:headers "user-agent"]))
-      (cond
-        (= (req :uri) "/")
-        {
-         :status  200
-         :headers {"Content-Type" "text/plain; charset=UTF-8"}
-         :body    "lol meow dis is how we do it\n"
-         }
-        (and
-          (instance? clojure.lang.PersistentArrayMap reply)
-          (contains? reply :error)
-          )
-        {
-         :status  500
-         :headers {"Content-Type" "text/plain; charset=UTF-8"}
-         :body    "Internal Server Error\n"
-         }
-
-        :else
-        {
-         :status  200
-         :headers {"Content-Type" "application/atom+xml; charset=UTF-8"}
-         :body    reply
-         }
-        )
-      )
-    )
+             (not-found "<p>Page not found.</p>")
+  )
   (org.httpkit.server/run-server app {:port 8080})
   (log/info "Server is up!")
-          )
+  )

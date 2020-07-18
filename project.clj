@@ -9,6 +9,7 @@
                  [org.clojure/clojure "1.10.1"]
                  [buran "0.1.4"]
                  [http-kit "2.3.0"]
+                 [compojure "1.6.1"]
                  [org.clojure/clojure "1.10.1"]
                  [org.clojure/tools.logging "1.1.0"]
                  [ch.qos.logback/logback-classic "1.2.3"]
