@@ -14,14 +14,31 @@
             [org.httpkit.server]
             [org.httpkit.client]
             [clojure.tools.logging :as log]
+            [clojure.java.io :as io]
             )
   )
 
-(def version {
-              :name "well_feedit"
-              :version "2.0.0"
-              :url "https://github.com/simmel/well_feedit/"
-              }
+(def version (let
+               [
+                name "well_feedit"
+                version
+                (let [pom-properties
+                      (with-open
+                        [pom-properties-reader
+                         (io/reader
+                           (io/resource
+                             (format "META-INF/maven/%1$s/%1$s/pom.properties" name)
+                             ))]
+                        (doto (java.util.Properties.)
+                          (.load pom-properties-reader)))]
+                  (get pom-properties "version"))
+                ]
+               {
+                :name name
+                :version version
+                :url "https://github.com/simmel/well_feedit/"
+                }
+               )
   )
 
 (def user-agent (let

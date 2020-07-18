@@ -1,3 +1,11 @@
-.cpcache
+/target
+/classes
+/checkouts
+profiles.clj
 pom.xml
-target/
+pom.xml.asc
+*.jar
+*.class
+/.lein-*
+/.nrepl-port
+/.prepl-port
