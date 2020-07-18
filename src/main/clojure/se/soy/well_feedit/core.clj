@@ -175,7 +175,9 @@
                   (log/infof "%s %s %s %s %s" (req :remote-addr) (req :server-name) (req :request-method) (req :uri) (get-in req [:headers "user-agent"]))
                   (let [
                         request (str
-                                  "https://old.reddit.com/"
+                                  "https://"
+                                  (if (clojure.string/starts-with? (req :server-name) "old.") "old." "")
+                                  "reddit.com/"
                                   uri
                                   (let [qs (req :query-string)]
                                     (if (nil? qs)

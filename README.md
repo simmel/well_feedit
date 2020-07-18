@@ -17,8 +17,10 @@ well\_feedit currently:
     comments.
   * Then remove the `content` entry since it's just data duped from other
     elements.
-* uses the `old.reddit.com` domain which still is better than the regular
-  site.
+* If you visit it on a subdomain which starts with `old.`, e.g.
+  https://old.well-feedit.io/r/netsec/new.rss, it uses the `old.reddit.com`
+  domain which still is better than the regular site on a computer but right
+  now the regular site is better on mobile.
 
 ### TODO
 
