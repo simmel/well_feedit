@@ -25,6 +25,7 @@ well\_feedit currently:
 * [ ] Add usage
 * [X] Convert to using `lein`. `deps.edn` was fun to try but it's just not
   ready.
+* [ ] Start running it with JDK11
 * [ ] Start using jib for building the container
 * [ ] Add structured logging
 * [ ] Move back to compojure, again. [It can be used.](https://github.com/weavejester/compojure/wiki/Routes-In-Detail#matching-the-uri)
