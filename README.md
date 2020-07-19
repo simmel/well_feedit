@@ -29,7 +29,7 @@ well\_feedit currently:
   ready.
 * [X] Add support for logging X-F-F
 * [X] Start running it with JDK11
-* [ ] Start using jib for building the container
+* [X] Start using jib for building the container
 * [ ] Add structured logging
 * [X] Move back to compojure, again. [It can be used.](https://github.com/weavejester/compojure/wiki/Routes-In-Detail#matching-the-uri)
 * [ ] Not to be that person, but add tests (even though I failed to use TDD yet
