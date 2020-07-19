@@ -27,6 +27,10 @@ well\_feedit currently:
 * [ ] Add usage
 * [X] Convert to using `lein`. `deps.edn` was fun to try but it's just not
   ready.
+* [ ] [Create a release](https://github.com/actions/create-release)
+  * [ ] [Upload uberjar as an asset](https://github.com/actions/upload-release-asset/)
+  * [ ] ["Upload" Docker container as an asset](https://docs.github.com/en/actions/language-and-framework-guides/publishing-docker-images)
+* [X] Add support for logging X-F-F
 * [X] Add support for logging X-F-F
 * [X] Start running it with JDK11
 * [X] Start using jib for building the container
