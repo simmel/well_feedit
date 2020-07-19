@@ -17,4 +17,4 @@ USER 1000
 
 EXPOSE 8080
 
-CMD ["java", "-Xmx20m", "-Xms20m", "-jar", "/app.jar"]
+CMD ["java", "-Xmx40m", "-Xms40m", "-jar", "/app.jar"]
