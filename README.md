@@ -22,9 +22,36 @@ well\_feedit currently:
   domain which still is better than the regular site on a computer but right
   now the regular site is better on mobile.
 
+### Usage
+
+#### Run standalone
+Until I've fixed the Github Action and upload the uberjar to a tag^Wrelease,
+you have do build it your self:
+```terminal
+$ git clone https://github.com/simmel/well_feedit.git
+$ cd well_feedit
+$ lein uberjar
+$ java -jar target/uberjar/*-standalone.jar
+[...]
+[main] INFO  se.soy.well_feedit.core - Server is up!
+```
+
+#### Run as a container
+```terminal
+$ docker run --rm -it -p 8080:8080  well_feedit:latest
+[...]
+[main] INFO  se.soy.well_feedit.core - Server is up!
+$ curl localhost:8080/r/netsec/new.rss
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <title>newest submissions : netsec</title>
+  <link rel="alternate" type="text/html" href="https://www.reddit.com/r/netsec/new/" />
+[...]
+```
+
 ### TODO
 
-* [ ] Add usage
+* [X] Add usage
 * [X] Convert to using `lein`. `deps.edn` was fun to try but it's just not
   ready.
 * [ ] [Create a release](https://github.com/actions/create-release)
