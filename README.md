@@ -27,6 +27,7 @@ well\_feedit currently:
 * [ ] Add usage
 * [X] Convert to using `lein`. `deps.edn` was fun to try but it's just not
   ready.
+* [X] Add support for logging X-F-F
 * [ ] Start running it with JDK11
 * [ ] Start using jib for building the container
 * [ ] Add structured logging

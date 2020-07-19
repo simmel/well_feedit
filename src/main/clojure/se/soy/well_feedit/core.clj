@@ -159,11 +159,18 @@
     )
   )
 
+(defn get-real-ip [req]
+  (if (contains? (req :headers) "x-forwarded-for")
+    (get-in req [:headers "x-forwarded-for"])
+    (req :remote-addr)
+    )
+  )
+
 (defn -main [& args]
   (defroutes app
              (GET "/" [:as req]
                   ;; 1.2.3.4 well_feed.it - [27/May/2020:13:33:37 +0000] "GET /netsec.atom HTTP/1.1" 200 2642 "-" "well_feedit/1.0.0 (+https://github.com/simmel/well_feedit/) rome/1.12.0"
-                  (log/infof "%s %s %s %s %s" (req :remote-addr) (req :server-name) (req :request-method) (req :uri) (get-in req [:headers "user-agent"]))
+                  (log/infof "%s %s %s %s %s" (get-real-ip req) (req :server-name) (req :request-method) (req :uri) (get-in req [:headers "user-agent"]))
                   {
                    :status  200
                    :headers {"Content-Type" "text/plain; charset=UTF-8"}
@@ -172,7 +179,7 @@
                   )
              (GET "/:uri{.+}" [uri :as req]
                   ;; 1.2.3.4 well_feed.it - [27/May/2020:13:33:37 +0000] "GET /netsec.atom HTTP/1.1" 200 2642 "-" "well_feedit/1.0.0 (+https://github.com/simmel/well_feedit/) rome/1.12.0"
-                  (log/infof "%s %s %s %s %s" (req :remote-addr) (req :server-name) (req :request-method) (req :uri) (get-in req [:headers "user-agent"]))
+                  (log/infof "%s %s %s %s %s" (get-real-ip req) (req :server-name) (req :request-method) (req :uri) (get-in req [:headers "user-agent"]))
                   (let [
                         request (str
                                   "https://"
