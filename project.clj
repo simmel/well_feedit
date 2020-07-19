@@ -8,7 +8,7 @@
   :dependencies [
                  [org.clojure/clojure "1.10.1"]
                  [buran "0.1.4"]
-                 [http-kit "2.3.0"]
+                 [http-kit "2.4.0-alpha6"]
                  [compojure "1.6.1"]
                  [org.clojure/clojure "1.10.1"]
                  [org.clojure/tools.logging "1.1.0"]
