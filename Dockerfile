@@ -9,7 +9,7 @@ COPY src src
 
 RUN ["lein", "uberjar"]
 
-FROM adoptopenjdk/openjdk8:jdk8u252-b09-alpine-slim@sha256:3de6dfd82768fe2b81c6d4609f041b3c8b75e15f9917fa05fec5cb07b30f6a94 as prod
+FROM adoptopenjdk/openjdk11:jre-11.0.7_10-alpine@sha256:cbd20379d141de45148f6e2f2be388f8cbb3a5211eaaa389930a3a80b56d95ee as prod
 
 COPY --from=builder /usr/src/target/uberjar/*-standalone.jar /app.jar
 

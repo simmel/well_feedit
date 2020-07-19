@@ -28,7 +28,7 @@ well\_feedit currently:
 * [X] Convert to using `lein`. `deps.edn` was fun to try but it's just not
   ready.
 * [X] Add support for logging X-F-F
-* [ ] Start running it with JDK11
+* [X] Start running it with JDK11
 * [ ] Start using jib for building the container
 * [ ] Add structured logging
 * [X] Move back to compojure, again. [It can be used.](https://github.com/weavejester/compojure/wiki/Routes-In-Detail#matching-the-uri)
