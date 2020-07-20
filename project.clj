@@ -1,4 +1,4 @@
-(defproject well_feedit "3.0.1"
+(defproject well_feedit "3.0.2-SNAPSHOT"
   :description "A \"prettifying Atom proxy\" for reddits \"RSS\" feeds — for better reading"
   :url "https://github.com/simmel/well_feedit"
   :license {:name "ISC License"
