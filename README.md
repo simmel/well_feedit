@@ -34,6 +34,12 @@ $ lein uberjar
 $ java -jar target/uberjar/*-standalone.jar
 [...]
 [main] INFO  se.soy.well_feedit.core - Server is up!
+$ curl localhost:8080/r/netsec/new.rss
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <title>newest submissions : netsec</title>
+  <link rel="alternate" type="text/html" href="https://www.reddit.com/r/netsec/new/" />
+[...]
 ```
 
 #### Run as a container
