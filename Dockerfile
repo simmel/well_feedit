@@ -7,6 +7,8 @@ RUN ["lein", "uberjar"]
 
 COPY src src
 
+RUN ["lein", "test"]
+
 RUN ["lein", "uberjar"]
 
 FROM adoptopenjdk/openjdk11:jre-11.0.7_10-alpine@sha256:cbd20379d141de45148f6e2f2be388f8cbb3a5211eaaa389930a3a80b56d95ee as prod
