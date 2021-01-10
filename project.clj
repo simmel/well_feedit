@@ -4,6 +4,7 @@
   :license {:name "ISC License"
             :url "https://www.isc.org/downloads/software-support-policy/isc-license/"}
   :source-paths ["src/main/clojure"]
+  :test-paths ["src/test/clojure"]
   :resource-paths ["src/main/resources"]
   :dependencies [
                  [org.clojure/clojure "1.10.1"]
@@ -28,4 +29,8 @@
                   ]
                   ;; ["vcs" "push"]
   :profiles {:uberjar {:aot :all
-                       :jvm-opts ["-Dclojure.compiler.direct-linking=true"]}})
+                       :jvm-opts ["-Dclojure.compiler.direct-linking=true"]}
+             :dev {:dependencies [
+                                  [http-kit.fake "0.2.1"]
+                                  ]
+                   }})
