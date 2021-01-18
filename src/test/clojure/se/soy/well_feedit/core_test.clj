@@ -1,10 +1,17 @@
 (ns se.soy.well_feedit.core_test
-  (:require [clojure.test :refer :all]
+  (:use org.httpkit.fake)
+  (:require
+    [se.soy.well_feedit.core :refer :all]
+    [clojure.test :refer :all]
+    [org.httpkit.client :as http]
             ))
 
 (deftest a-test
          (testing "Testing is"
-                  (is (= 1 1))
-                  (is (= 1 0))
+                  (with-fake-http ["https://reddit.com/r/netsec/new.rss" "testing http"]
+                                  (let [netsec (http/get
+                                                 "https://reddit.com/r/netsec/new.rss")]
+                                    (is (= "testing http" (:body @netsec)))
+                                    ))
                   )
          )
