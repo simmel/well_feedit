@@ -3,15 +3,14 @@
   (:require
     [se.soy.well_feedit.core :refer :all]
     [clojure.test :refer :all]
-    [org.httpkit.client :as http]
             ))
 
 (deftest a-test
          (testing "Testing is"
                   (with-fake-http ["https://reddit.com/r/netsec/new.rss" "testing http"]
-                                  (let [netsec (http/get
+                                  (let [netsec (get-reddit-feed
                                                  "https://reddit.com/r/netsec/new.rss")]
-                                    (is (= "testing http" (:body @netsec)))
+                                    (is (= "testing http" netsec))
                                     ))
                   )
          )
