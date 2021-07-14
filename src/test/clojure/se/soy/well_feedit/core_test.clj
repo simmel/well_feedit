@@ -35,5 +35,20 @@
                   )
                   )
 
+                  (testing "teddit"
+                  (let [
+                        netsec-original (slurp "src/test/resources/netsec-original.atom")
+                        netsec-fixed (slurp "src/test/resources/netsec-fixed.atom")
+                        ]
+                  (with-fake-http ["https://www.reddit.com/r/netsec/new.rss" netsec-original]
+                                (binding [*variant* (get-variant-url "teddit.localhost")]
+                                  (let [netsec (get-well-feedit
+                                                 "https://www.reddit.com/r/netsec/new.rss")]
+                                    (is (clojure.string/includes? netsec "<link rel=\"replies\" type=\"text/html\" href=\"https://teddit.net/r/netsec/comments/kzal3u/unvalidated_user_input_in_ms_sharepoint_2019/\" />"))
+                                    ))
+                                  )
+                  )
+                  )
+
                   )
          )
