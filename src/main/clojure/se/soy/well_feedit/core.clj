@@ -21,6 +21,7 @@
     [compojure.core :only [defroutes GET]]
     )
   )
+(def ^:dynamic *variant* "https://www.reddit.com")
 
 (def version (let
                [
@@ -79,7 +80,7 @@
   )
 
 (defn get-original-url [_ entry] (first (get-content-urls entry)))
-(defn get-comment-url [entry] (last (get-content-urls entry)))
+(defn get-comment-url [entry] (clojure.string/replace (last (get-content-urls entry)) #"^https://www.reddit.com" *variant*))
 
 (defn update-link [entry]
   (update
@@ -166,6 +167,14 @@
     )
   )
 
+(defn get-variant-url [server-name]
+  (cond
+    (clojure.string/starts-with? server-name "old.") "https://old.reddit.com"
+    (clojure.string/starts-with? server-name "teddit.") "https://teddit.net"
+    :default *variant*
+    )
+  )
+
 (defn -main [& args]
   (defroutes app
              (GET "/" [:as req]
@@ -182,9 +191,7 @@
                   (log/infof "%s %s %s %s %s" (get-real-ip req) (req :server-name) (req :request-method) (req :uri) (get-in req [:headers "user-agent"]))
                   (let [
                         request (str
-                                  "https://"
-                                  (if (clojure.string/starts-with? (req :server-name) "old.") "old." "")
-                                  "reddit.com/"
+                                  "https://www.reddit.com/"
                                   uri
                                   (let [qs (req :query-string)]
                                     (if (nil? qs)
@@ -195,7 +202,9 @@
                                   )
                         reply (if (= request "")
                                 nil
-                                (get-well-feedit request)
+                                (binding [*variant* (get-variant-url (req :server-name))]
+                                  (get-well-feedit request)
+                                  )
                                 )
                         ]
                     (cond
