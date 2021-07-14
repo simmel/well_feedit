@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/">
+  <category term="netsec" label="r/netsec"/>
+  <updated>2021-01-20T17:11:53+00:00</updated>
+  <icon>https://www.redditstatic.com/icon.png/</icon>
+  <id>/r/netsec/new.rss</id>
+  <link rel="self" href="https://www.reddit.com/r/netsec/new.rss" type="application/atom+xml"/>
+  <link rel="alternate" href="https://www.reddit.com/r/netsec/new" type="text/html"/>
+  <subtitle>A community for technical news and discussion of information security and closely related topics.</subtitle>
+  <title>newest submissions : netsec</title>
+  <entry>
+    <author>
+      <name>/u/7rillionaire</name>
+      <uri>https://www.reddit.com/user/7rillionaire</uri>
+    </author>
+    <category term="netsec" label="r/netsec"/>
+    <content type="html">&amp;#32; submitted by &amp;#32; &lt;a href="https://www.reddit.com/user/7rillionaire"&gt; /u/7rillionaire &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href="https://github.com/linuxmint/cinnamon-screensaver/issues/354"&gt;[link]&lt;/a&gt;&lt;/span&gt; &amp;#32; &lt;span&gt;&lt;a href="https://www.reddit.com/r/netsec/comments/l1csit/kids_find_a_security_flaw_in_linux_mint_by/"&gt;[comments]&lt;/a&gt;&lt;/span&gt;</content>
+    <id>t3_l1csit</id>
+    <link href="https://www.reddit.com/r/netsec/comments/l1csit/kids_find_a_security_flaw_in_linux_mint_by/"/>
+    <updated>2021-01-20T16:40:42+00:00</updated>
+    <title>Kids find a security flaw in Linux Mint by mashing keys</title>
+  </entry>
+  <entry>
+    <author>
+      <name>/u/0xdea</name>
+      <uri>https://www.reddit.com/user/0xdea</uri>
+    </author>
+    <category term="netsec" label="r/netsec"/>
+    <content type="html">&amp;#32; submitted by &amp;#32; &lt;a href="https://www.reddit.com/user/0xdea"&gt; /u/0xdea &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href="https://googleprojectzero.blogspot.com/2021/01/the-state-of-state-machines.html"&gt;[link]&lt;/a&gt;&lt;/span&gt; &amp;#32; &lt;span&gt;&lt;a href="https://www.reddit.com/r/netsec/comments/l13ugq/the_state_of_state_machines/"&gt;[comments]&lt;/a&gt;&lt;/span&gt;</content>
+    <id>t3_l13ugq</id>
+    <link href="https://www.reddit.com/r/netsec/comments/l13ugq/the_state_of_state_machines/"/>
+    <updated>2021-01-20T06:52:46+00:00</updated>
+    <title>The State of State Machines</title>
+  </entry>
+  <entry>
+    <author>
+      <name>/u/opnerkal</name>
+      <uri>https://www.reddit.com/user/opnerkal</uri>
+    </author>
+    <category term="netsec" label="r/netsec"/>
+    <content type="html">&amp;#32; submitted by &amp;#32; &lt;a href="https://www.reddit.com/user/opnerkal"&gt; /u/opnerkal &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href="https://github.com/cisagov/Sparrow/#"&gt;[link]&lt;/a&gt;&lt;/span&gt; &amp;#32; &lt;span&gt;&lt;a href="https://www.reddit.com/r/netsec/comments/l14v5e/cisa_tool_to_help_hunt_for_telltale_adversary/"&gt;[comments]&lt;/a&gt;&lt;/span&gt;</content>
+    <id>t3_l14v5e</id>
+    <link href="https://www.reddit.com/r/netsec/comments/l14v5e/cisa_tool_to_help_hunt_for_telltale_adversary/"/>
+    <updated>2021-01-20T08:10:38+00:00</updated>
+    <title>CISA tool to help hunt for tell-tale adversary techniques in M365</title>
+  </entry>
+  <entry>
+    <author>
+      <name>/u/b3nw</name>
+      <uri>https://www.reddit.com/user/b3nw</uri>
+    </author>
+    <category term="netsec" label="r/netsec"/>
+    <content type="html">&amp;#32; submitted by &amp;#32; &lt;a href="https://www.reddit.com/user/b3nw"&gt; /u/b3nw &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href="https://www.jsof-tech.com/disclosures/dnspooq/"&gt;[link]&lt;/a&gt;&lt;/span&gt; &amp;#32; &lt;span&gt;&lt;a href="https://www.reddit.com/r/netsec/comments/l0y8gx/dnspooq_jsof_reporting_7_vulnerabilities_found_in/"&gt;[comments]&lt;/a&gt;&lt;/span&gt;</content>
+    <id>t3_l0y8gx</id>
+    <link href="https://www.reddit.com/r/netsec/comments/l0y8gx/dnspooq_jsof_reporting_7_vulnerabilities_found_in/"/>
+    <updated>2021-01-20T01:13:41+00:00</updated>
+    <title>DNSPOOQ - JSOF reporting 7 vulnerabilities found in dnsmasq</title>
+  </entry>
+  <entry>
+    <author>
+      <name>/u/_kawhl</name>
+      <uri>https://www.reddit.com/user/_kawhl</uri>
+    </author>
+    <category term="netsec" label="r/netsec"/>
+    <content type="html">&amp;#32; submitted by &amp;#32; &lt;a href="https://www.reddit.com/user/_kawhl"&gt; /u/_kawhl &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href="https://therealunicornsecurity.github.io/Powervision-2/"&gt;[link]&lt;/a&gt;&lt;/span&gt; &amp;#32; &lt;span&gt;&lt;a href="https://www.reddit.com/r/netsec/comments/l0wxt5/hacking_a_harleys_tuner_part_2/"&gt;[comments]&lt;/a&gt;&lt;/span&gt;</content>
+    <id>t3_l0wxt5</id>
+    <link href="https://www.reddit.com/r/netsec/comments/l0wxt5/hacking_a_harleys_tuner_part_2/"/>
+    <updated>2021-01-20T00:06:27+00:00</updated>
+    <title>Hacking a Harley's Tuner - Part 2</title>
+  </entry>
+  <entry>
+    <author>
+      <name>/u/nvn1729</name>
+      <uri>https://www.reddit.com/user/nvn1729</uri>
+    </author>
+    <category term="netsec" label="r/netsec"/>
+    <content type="html">&amp;#32; submitted by &amp;#32; &lt;a href="https://www.reddit.com/user/nvn1729"&gt; /u/nvn1729 &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href="https://www.horizon3.ai/disclosures/mautic-unauth-xss-to-rce.html"&gt;[link]&lt;/a&gt;&lt;/span&gt; &amp;#32; &lt;span&gt;&lt;a href="https://www.reddit.com/r/netsec/comments/l0rfm4/unauthenticated_xss_to_remote_code_execution/"&gt;[comments]&lt;/a&gt;&lt;/span&gt;</content>
+    <id>t3_l0rfm4</id>
+    <link href="https://www.reddit.com/r/netsec/comments/l0rfm4/unauthenticated_xss_to_remote_code_execution/"/>
+    <updated>2021-01-19T19:40:55+00:00</updated>
+    <title>Unauthenticated XSS to Remote Code Execution Chain in Mautic &lt; 3.2.4</title>
+  </entry>
+  <entry>
+    <author>
+      <name>/u/Bishopfox</name>
+      <uri>https://www.reddit.com/user/Bishopfox</uri>
+    </author>
+    <category term="netsec" label="r/netsec"/>
+    <content type="html">&amp;#32; submitted by &amp;#32; &lt;a href="https://www.reddit.com/user/Bishopfox"&gt; /u/Bishopfox &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href="https://labs.bishopfox.com/tech-blog/bad-pods-kubernetes-pod-privilege-escalation"&gt;[link]&lt;/a&gt;&lt;/span&gt; &amp;#32; &lt;span&gt;&lt;a href="https://www.reddit.com/r/netsec/comments/l0r17j/bad_pods_kubernetes_pod_privilege_escalation/"&gt;[comments]&lt;/a&gt;&lt;/span&gt;</content>
+    <id>t3_l0r17j</id>
+    <link href="https://www.reddit.com/r/netsec/comments/l0r17j/bad_pods_kubernetes_pod_privilege_escalation/"/>
+    <updated>2021-01-19T19:22:22+00:00</updated>
+    <title>Bad Pods: Kubernetes Pod Privilege Escalation</title>
+  </entry>
+  <entry>
+    <author>
+      <name>/u/_____WINTERMUTE_____</name>
+      <uri>https://www.reddit.com/user/_____WINTERMUTE_____</uri>
+    </author>
+    <category term="netsec" label="r/netsec"/>
+    <content type="html">&amp;#32; submitted by &amp;#32; &lt;a href="https://www.reddit.com/user/_____WINTERMUTE_____"&gt; /u/_____WINTERMUTE_____ &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href="https://github.com/redcode-labs/Svetovid"&gt;[link]&lt;/a&gt;&lt;/span&gt; &amp;#32; &lt;span&gt;&lt;a href="https://www.reddit.com/r/netsec/comments/l0iy3n/svetovid_collection_of_postexploitation_stuff/"&gt;[comments]&lt;/a&gt;&lt;/span&gt;</content>
+    <id>t3_l0iy3n</id>
+    <link href="https://www.reddit.com/r/netsec/comments/l0iy3n/svetovid_collection_of_postexploitation_stuff/"/>
+    <updated>2021-01-19T12:31:50+00:00</updated>
+    <title>Svetovid - collection of post-exploitation stuff + reverse proxy server</title>
+  </entry>
+  <entry>
+    <author>
+      <name>/u/sanitybit</name>
+      <uri>https://www.reddit.com/user/sanitybit</uri>
+    </author>
+    <category term="netsec" label="r/netsec"/>
+    <content type="html">&amp;#32; submitted by &amp;#32; &lt;a href="https://www.reddit.com/user/sanitybit"&gt; /u/sanitybit &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href="https://blog.snort.org/2021/01/snort-3-officially-released.html"&gt;[link]&lt;/a&gt;&lt;/span&gt; &amp;#32; &lt;span&gt;&lt;a href="https://www.reddit.com/r/netsec/comments/l0r3na/snort_3_ga_release/"&gt;[comments]&lt;/a&gt;&lt;/span&gt;</content>
+    <id>t3_l0r3na</id>
+    <link href="https://www.reddit.com/r/netsec/comments/l0r3na/snort_3_ga_release/"/>
+    <updated>2021-01-19T19:25:26+00:00</updated>
+    <title>Snort 3 GA Release</title>
+  </entry>
+  <entry>
+    <author>
+      <name>/u/capitangolo</name>
+      <uri>https://www.reddit.com/user/capitangolo</uri>
+    </author>
+    <category term="netsec" label="r/netsec"/>
+    <content type="html">&amp;#32; submitted by &amp;#32; &lt;a href="https://www.reddit.com/user/capitangolo"&gt; /u/capitangolo &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href="https://sysdig.com/blog/falco-vs-auditd-hids/"&gt;[link]&lt;/a&gt;&lt;/span&gt; &amp;#32; &lt;span&gt;&lt;a href="https://www.reddit.com/r/netsec/comments/l0proo/auditd_vs_falco_as_host_intrusion_detection_tools/"&gt;[comments]&lt;/a&gt;&lt;/span&gt;</content>
+    <id>t3_l0proo</id>
+    <link href="https://www.reddit.com/r/netsec/comments/l0proo/auditd_vs_falco_as_host_intrusion_detection_tools/"/>
+    <updated>2021-01-19T18:24:05+00:00</updated>
+    <title>AuditD vs. Falco as Host Intrusion Detection tools - Rule creation, granularity, capabilities, performance…</title>
+  </entry>
+  <entry>
+    <author>
+      <name>/u/jtnydv</name>
+      <uri>https://www.reddit.com/user/jtnydv</uri>
+    </author>
+    <category term="netsec" label="r/netsec"/>
+    <content type="html">&amp;#32; submitted by &amp;#32; &lt;a href="https://www.reddit.com/user/jtnydv"&gt; /u/jtnydv &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href="https://blog.jtnydv.com/harden-docker-with-cis-p6-container-runtime-configuration-part-2/"&gt;[link]&lt;/a&gt;&lt;/span&gt; &amp;#32; &lt;span&gt;&lt;a href="https://www.reddit.com/r/netsec/comments/l0nxub/harden_docker_with_cis_8211_p6_container_runtime/"&gt;[comments]&lt;/a&gt;&lt;/span&gt;</content>
+    <id>t3_l0nxub</id>
+    <link href="https://www.reddit.com/r/netsec/comments/l0nxub/harden_docker_with_cis_8211_p6_container_runtime/"/>
+    <updated>2021-01-19T17:00:10+00:00</updated>
+    <title>Harden Docker with CIS &amp;#8211; (P6) Container Runtime Configuration &amp;#8211; Part 2</title>
+  </entry>
+  <entry>
+    <author>
+      <name>/u/digicat</name>
+      <uri>https://www.reddit.com/user/digicat</uri>
+    </author>
+    <category term="netsec" label="r/netsec"/>
+    <content type="html">&amp;#32; submitted by &amp;#32; &lt;a href="https://www.reddit.com/user/digicat"&gt; /u/digicat &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href="https://symantec-enterprise-blogs.security.com/blogs/threat-intelligence/solarwinds-raindrop-malware"&gt;[link]&lt;/a&gt;&lt;/span&gt; &amp;#32; &lt;span&gt;&lt;a href="https://www.reddit.com/r/netsec/comments/l0jy3p/raindrop_new_malware_discovered_in_solarwinds/"&gt;[comments]&lt;/a&gt;&lt;/span&gt;</content>
+    <id>t3_l0jy3p</id>
+    <link href="https://www.reddit.com/r/netsec/comments/l0jy3p/raindrop_new_malware_discovered_in_solarwinds/"/>
+    <updated>2021-01-19T13:36:23+00:00</updated>
+    <title>Raindrop: New Malware Discovered in SolarWinds Investigation</title>
+  </entry>
+  <entry>
+    <author>
+      <name>/u/Rumata888</name>
+      <uri>https://www.reddit.com/user/Rumata888</uri>
+    </author>
+    <category term="netsec" label="r/netsec"/>
+    <content type="html">&amp;#32; submitted by &amp;#32; &lt;a href="https://www.reddit.com/user/Rumata888"&gt; /u/Rumata888 &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href="https://bi-zone.medium.com/silence-will-fall-or-how-it-can-take-2-years-to-get-your-vuln-registered-e6134846f5bb"&gt;[link]&lt;/a&gt;&lt;/span&gt; &amp;#32; &lt;span&gt;&lt;a href="https://www.reddit.com/r/netsec/comments/l0jp3q/silence_will_fall_or_how_it_can_take_2_years_to/"&gt;[comments]&lt;/a&gt;&lt;/span&gt;</content>
+    <id>t3_l0jp3q</id>
+    <link href="https://www.reddit.com/r/netsec/comments/l0jp3q/silence_will_fall_or_how_it_can_take_2_years_to/"/>
+    <updated>2021-01-19T13:21:04+00:00</updated>
+    <title>Silence Will Fall (Or How It Can Take 2 Years to Get Your Vuln Registered)</title>
+  </entry>
+  <entry>
+    <author>
+      <name>/u/elongl</name>
+      <uri>https://www.reddit.com/user/elongl</uri>
+    </author>
+    <category term="netsec" label="r/netsec"/>
+    <content type="html">&amp;#32; submitted by &amp;#32; &lt;a href="https://www.reddit.com/user/elongl"&gt; /u/elongl &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href="https://elongl.github.io/exploitation/2021/01/08/cve-2014-3153.html"&gt;[link]&lt;/a&gt;&lt;/span&gt; &amp;#32; &lt;span&gt;&lt;a href="https://www.reddit.com/r/netsec/comments/l0hpg3/exploiting_cve20143153_towelroot/"&gt;[comments]&lt;/a&gt;&lt;/span&gt;</content>
+    <id>t3_l0hpg3</id>
+    <link href="https://www.reddit.com/r/netsec/comments/l0hpg3/exploiting_cve20143153_towelroot/"/>
+    <updated>2021-01-19T11:03:20+00:00</updated>
+    <title>Exploiting CVE-2014-3153 (Towelroot)</title>
+  </entry>
+  <entry>
+    <author>
+      <name>/u/sn1pr0s</name>
+      <uri>https://www.reddit.com/user/sn1pr0s</uri>
+    </author>
+    <category term="netsec" label="r/netsec"/>
+    <content type="html">&amp;#32; submitted by &amp;#32; &lt;a href="https://www.reddit.com/user/sn1pr0s"&gt; /u/sn1pr0s &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href="https://snyk.io/blog/cache-poisoning-in-popular-open-source-packages/"&gt;[link]&lt;/a&gt;&lt;/span&gt; &amp;#32; &lt;span&gt;&lt;a href="https://www.reddit.com/r/netsec/comments/l0hgc7/cache_poisoning_in_popular_open_source_packages/"&gt;[comments]&lt;/a&gt;&lt;/span&gt;</content>
+    <id>t3_l0hgc7</id>
+    <link href="https://www.reddit.com/r/netsec/comments/l0hgc7/cache_poisoning_in_popular_open_source_packages/"/>
+    <updated>2021-01-19T10:44:14+00:00</updated>
+    <title>Cache poisoning in popular open source packages - Flask, Bottle, and even in Python's source code</title>
+  </entry>
+  <entry>
+    <author>
+      <name>/u/moxofoxo</name>
+      <uri>https://www.reddit.com/user/moxofoxo</uri>
+    </author>
+    <category term="netsec" label="r/netsec"/>
+    <content type="html">&amp;#32; submitted by &amp;#32; &lt;a href="https://www.reddit.com/user/moxofoxo"&gt; /u/moxofoxo &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href="https://theintercept.com/2021/01/18/leak-zoom-meeting/"&gt;[link]&lt;/a&gt;&lt;/span&gt; &amp;#32; &lt;span&gt;&lt;a href="https://www.reddit.com/r/netsec/comments/l0b2mi/what_you_should_know_before_leaking_a_zoom_meeting/"&gt;[comments]&lt;/a&gt;&lt;/span&gt;</content>
+    <id>t3_l0b2mi</id>
+    <link href="https://www.reddit.com/r/netsec/comments/l0b2mi/what_you_should_know_before_leaking_a_zoom_meeting/"/>
+    <updated>2021-01-19T03:25:39+00:00</updated>
+    <title>What You Should Know Before Leaking a Zoom Meeting</title>
+  </entry>
+  <entry>
+    <author>
+      <name>/u/w8rbt</name>
+      <uri>https://www.reddit.com/user/w8rbt</uri>
+    </author>
+    <category term="netsec" label="r/netsec"/>
+    <content type="html">&amp;#32; submitted by &amp;#32; &lt;a href="https://www.reddit.com/user/w8rbt"&gt; /u/w8rbt &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href="https://www.go350.com/posts/a-survey-of-security-dot-txt/"&gt;[link]&lt;/a&gt;&lt;/span&gt; &amp;#32; &lt;span&gt;&lt;a href="https://www.reddit.com/r/netsec/comments/kzx89n/a_survey_of_securitytxt/"&gt;[comments]&lt;/a&gt;&lt;/span&gt;</content>
+    <id>t3_kzx89n</id>
+    <link href="https://www.reddit.com/r/netsec/comments/kzx89n/a_survey_of_securitytxt/"/>
+    <updated>2021-01-18T15:52:36+00:00</updated>
+    <title>A survey of security.txt</title>
+  </entry>
+  <entry>
+    <author>
+      <name>/u/netbiosX</name>
+      <uri>https://www.reddit.com/user/netbiosX</uri>
+    </author>
+    <category term="netsec" label="r/netsec"/>
+    <content type="html">&amp;#32; submitted by &amp;#32; &lt;a href="https://www.reddit.com/user/netbiosX"&gt; /u/netbiosX &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href="https://pentestlaboratories.com/2021/01/18/process-herpaderping-windows-defender-evasion/"&gt;[link]&lt;/a&gt;&lt;/span&gt; &amp;#32; &lt;span&gt;&lt;a href="https://www.reddit.com/r/netsec/comments/l00cjh/process_herpaderping_windows_defender_evasion/"&gt;[comments]&lt;/a&gt;&lt;/span&gt;</content>
+    <id>t3_l00cjh</id>
+    <link href="https://www.reddit.com/r/netsec/comments/l00cjh/process_herpaderping_windows_defender_evasion/"/>
+    <updated>2021-01-18T18:22:46+00:00</updated>
+    <title>Process Herpaderping – Windows Defender Evasion</title>
+  </entry>
+  <entry>
+    <author>
+      <name>/u/Single_Diamond</name>
+      <uri>https://www.reddit.com/user/Single_Diamond</uri>
+    </author>
+    <category term="netsec" label="r/netsec"/>
+    <content type="html">&amp;#32; submitted by &amp;#32; &lt;a href="https://www.reddit.com/user/Single_Diamond"&gt; /u/Single_Diamond &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href="https://bugs.xdavidhu.me/google/2021/01/18/the-embedded-youtube-player-told-me-what-you-were-watching-and-more/"&gt;[link]&lt;/a&gt;&lt;/span&gt; &amp;#32; &lt;span&gt;&lt;a href="https://www.reddit.com/r/netsec/comments/kzt38r/the_embedded_youtube_player_told_me_what_you_were/"&gt;[comments]&lt;/a&gt;&lt;/span&gt;</content>
+    <id>t3_kzt38r</id>
+    <link href="https://www.reddit.com/r/netsec/comments/kzt38r/the_embedded_youtube_player_told_me_what_you_were/"/>
+    <updated>2021-01-18T11:41:03+00:00</updated>
+    <title>The Embedded YouTube Player Told Me What You Were Watching (and more)</title>
+  </entry>
+  <entry>
+    <author>
+      <name>/u/AshleyKingUK</name>
+      <uri>https://www.reddit.com/user/AshleyKingUK</uri>
+    </author>
+    <category term="netsec" label="r/netsec"/>
+    <content type="html">&amp;#32; submitted by &amp;#32; &lt;a href="https://www.reddit.com/user/AshleyKingUK"&gt; /u/AshleyKingUK &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href="https://ash-king.co.uk/blog/Shazlocate-abusing-CVE-2019-8791-CVE-2019-8792"&gt;[link]&lt;/a&gt;&lt;/span&gt; &amp;#32; &lt;span&gt;&lt;a href="https://www.reddit.com/r/netsec/comments/kzwo0n/got_shazam_installed_learn_how_a_single_link/"&gt;[comments]&lt;/a&gt;&lt;/span&gt;</content>
+    <id>t3_kzwo0n</id>
+    <link href="https://www.reddit.com/r/netsec/comments/kzwo0n/got_shazam_installed_learn_how_a_single_link/"/>
+    <updated>2021-01-18T15:23:32+00:00</updated>
+    <title>Got Shazam installed? Learn how a single link could expose your location data</title>
+  </entry>
+  <entry>
+    <author>
+      <name>/u/NoUseForANick</name>
+      <uri>https://www.reddit.com/user/NoUseForANick</uri>
+    </author>
+    <category term="netsec" label="r/netsec"/>
+    <content type="html">&amp;#32; submitted by &amp;#32; &lt;a href="https://www.reddit.com/user/NoUseForANick"&gt; /u/NoUseForANick &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href="https://adepts.of0x.cc/shadowmove-hijack-socket/"&gt;[link]&lt;/a&gt;&lt;/span&gt; &amp;#32; &lt;span&gt;&lt;a href="https://www.reddit.com/r/netsec/comments/kzs7bm/hijacking_connections_without_injections_a/"&gt;[comments]&lt;/a&gt;&lt;/span&gt;</content>
+    <id>t3_kzs7bm</id>
+    <link href="https://www.reddit.com/r/netsec/comments/kzs7bm/hijacking_connections_without_injections_a/"/>
+    <updated>2021-01-18T10:33:55+00:00</updated>
+    <title>Hijacking connections without injections: a ShadowMoving approach to the art of pivoting</title>
+  </entry>
+  <entry>
+    <author>
+      <name>/u/dr_fogs</name>
+      <uri>https://www.reddit.com/user/dr_fogs</uri>
+    </author>
+    <category term="netsec" label="r/netsec"/>
+    <content type="html">&amp;#32; submitted by &amp;#32; &lt;a href="https://www.reddit.com/user/dr_fogs"&gt; /u/dr_fogs &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href="https://testtls.com/"&gt;[link]&lt;/a&gt;&lt;/span&gt; &amp;#32; &lt;span&gt;&lt;a href="https://www.reddit.com/r/netsec/comments/kzrxhv/test_a_tls_server_check_the_security_of_your/"&gt;[comments]&lt;/a&gt;&lt;/span&gt;</content>
+    <id>t3_kzrxhv</id>
+    <link href="https://www.reddit.com/r/netsec/comments/kzrxhv/test_a_tls_server_check_the_security_of_your/"/>
+    <updated>2021-01-18T10:13:07+00:00</updated>
+    <title>Test a TLS server: check the security of your SSL/TLS services</title>
+  </entry>
+  <entry>
+    <author>
+      <name>/u/chenerlich</name>
+      <uri>https://www.reddit.com/user/chenerlich</uri>
+    </author>
+    <category term="netsec" label="r/netsec"/>
+    <content type="html">&amp;#32; submitted by &amp;#32; &lt;a href="https://www.reddit.com/user/chenerlich"&gt; /u/chenerlich &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href="https://cymptom.com/cve-2020-5144-sonicwall-global-vpn-new-elevation-of-privileges-vulnerability/2021/01/"&gt;[link]&lt;/a&gt;&lt;/span&gt; &amp;#32; &lt;span&gt;&lt;a href="https://www.reddit.com/r/netsec/comments/kzrmay/cve20205144_sonicwall_global_vpn_new_elevation_of/"&gt;[comments]&lt;/a&gt;&lt;/span&gt;</content>
+    <id>t3_kzrmay</id>
+    <link href="https://www.reddit.com/r/netsec/comments/kzrmay/cve20205144_sonicwall_global_vpn_new_elevation_of/"/>
+    <updated>2021-01-18T09:48:30+00:00</updated>
+    <title>CVE-2020-5144 – SonicWall Global VPN New Elevation of Privileges Vulnerability (including Demo POC)</title>
+  </entry>
+  <entry>
+    <author>
+      <name>/u/meatlicious</name>
+      <uri>https://www.reddit.com/user/meatlicious</uri>
+    </author>
+    <category term="netsec" label="r/netsec"/>
+    <content type="html">&amp;#32; submitted by &amp;#32; &lt;a href="https://www.reddit.com/user/meatlicious"&gt; /u/meatlicious &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href="https://www.securecoding.com/blog/integer-overflow-attack-and-prevention/"&gt;[link]&lt;/a&gt;&lt;/span&gt; &amp;#32; &lt;span&gt;&lt;a href="https://www.reddit.com/r/netsec/comments/kzq882/integer_overflow_attack_and_prevention/"&gt;[comments]&lt;/a&gt;&lt;/span&gt;</content>
+    <id>t3_kzq882</id>
+    <link href="https://www.reddit.com/r/netsec/comments/kzq882/integer_overflow_attack_and_prevention/"/>
+    <updated>2021-01-18T07:56:33+00:00</updated>
+    <title>Integer Overflow Attack and Prevention</title>
+  </entry>
+  <entry>
+    <author>
+      <name>/u/slashcrypto</name>
+      <uri>https://www.reddit.com/user/slashcrypto</uri>
+    </author>
+    <category term="netsec" label="r/netsec"/>
+    <content type="html">&amp;#32; submitted by &amp;#32; &lt;a href="https://www.reddit.com/user/slashcrypto"&gt; /u/slashcrypto &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href="https://slashcrypto.org/2021/01/15/CVE-2020-1456/"&gt;[link]&lt;/a&gt;&lt;/span&gt; &amp;#32; &lt;span&gt;&lt;a href="https://www.reddit.com/r/netsec/comments/kzal3u/unvalidated_user_input_in_ms_sharepoint_2019/"&gt;[comments]&lt;/a&gt;&lt;/span&gt;</content>
+    <id>t3_kzal3u</id>
+    <link href="https://www.reddit.com/r/netsec/comments/kzal3u/unvalidated_user_input_in_ms_sharepoint_2019/"/>
+    <updated>2021-01-17T17:25:51+00:00</updated>
+    <title>Unvalidated User Input in MS SharePoint 2019 (CVE-2020-1456)</title>
+  </entry>
+</feed>
